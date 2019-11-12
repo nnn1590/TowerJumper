@@ -141,7 +141,6 @@ offset = Vector2( -90.2411, -59.2242 )
 [node name="Sprite1" type="Sprite" parent="Node2D"]
 
 transform/rot = 405.0
-transform/scale = Vector2( 1, 1 )
 texture = ExtResource( 2 )
 offset = Vector2( -90.2411, -59.2242 )
 
@@ -154,7 +153,6 @@ offset = Vector2( -90.2411, -59.2242 )
 [node name="Sprite3" type="Sprite" parent="Node2D"]
 
 transform/rot = 495.0
-transform/scale = Vector2( 1, 1 )
 texture = ExtResource( 2 )
 offset = Vector2( -90.2411, -59.2242 )
 
@@ -167,14 +165,12 @@ offset = Vector2( -90.2411, -59.2242 )
 [node name="Sprite5" type="Sprite" parent="Node2D"]
 
 transform/rot = 585.0
-transform/scale = Vector2( 1, 1 )
 texture = ExtResource( 2 )
 offset = Vector2( -90.2411, -59.2242 )
 
 [node name="Sprite6" type="Sprite" parent="Node2D"]
 
 transform/rot = 630.0
-transform/scale = Vector2( 1, 1 )
 texture = ExtResource( 2 )
 offset = Vector2( -90.2411, -59.2242 )
 

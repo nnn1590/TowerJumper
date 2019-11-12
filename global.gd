@@ -4,6 +4,7 @@ var mat_bad = preload("res://Materials/mat_segment_bad.tres")
 var mat_regular = preload("res://Materials/mat_segment_regular.tres") 
 var mat_column = preload("res://Materials/mat_column.tres")
 var mat_player = preload("res://Materials/mat_player.tres")
+var heat_up = preload("res://Scenes/Heatup.tscn")
 var mat_power_up_1
 
 var environment_palette = []
@@ -60,6 +61,8 @@ func update_points(addition):
 	emit_signal("update_points_viewer", addition)	
 	
 func _ready():
+	var heat_up_instance = heat_up.instance()
+	#add_child(heat_up_instance)
 	load_game()
 	save_game()
 	load_palette()

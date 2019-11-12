@@ -6,8 +6,13 @@ onready var width = Globals.get("display/width")
 var last_pos = 0
 var touchs_vec = {}
 
+func show_break():
+	print(get_node("BreakAnimationPlayer").is_active()," r ",get_node("BreakAnimationPlayer").is_playing())
+	get_node("BreakAnimationPlayer").play("BreakAnim")
+	print(get_node("BreakAnimationPlayer").is_active()," r ",get_node("BreakAnimationPlayer").is_playing())
+
 func _ready():
-	get_node("LevelLabel").set_text("Level " + str(global.level))
+	get_node("LevelLabel").set_text("LEVEL  " + str(global.level))
 	set_process_input(true)
 
 func handle_pos (pos):	
@@ -35,3 +40,6 @@ func _input(event):
 		var a = event.pos.x
 		if (touchs_vec.size() == 1):
 			handle_pos (event.pos.x)
+
+func _on_BreakAnimationPlayer_animation_started( name ):
+	print("RIM@: ",name)
