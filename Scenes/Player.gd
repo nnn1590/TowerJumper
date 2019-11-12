@@ -60,7 +60,6 @@ func _ready():
 	light.set_color(1,color)
 
 func die():
-	return 0
 	trail.set_emitting(false)
 	idle_particles.set_emitting(false)
 	meteor_particles.set_emitting(false)
