@@ -62,7 +62,7 @@ func update_points(addition):
 	
 func _ready():
 	var heat_up_instance = heat_up.instance()
-	#add_child(heat_up_instance)
+	add_child(heat_up_instance)
 	load_game()
 	save_game()
 	load_palette()
