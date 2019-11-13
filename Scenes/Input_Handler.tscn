@@ -193,9 +193,7 @@ autoplay = ""
 
 [node name="BreakPosition2D" type="Position2D" parent="."]
 
-visibility/opacity = 0.0
 transform/pos = Vector2( 360, 640 )
-transform/scale = Vector2( 2, 2 )
 
 [node name="BreakLabel" type="Label" parent="BreakPosition2D"]
 

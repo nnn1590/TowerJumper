@@ -40,6 +40,3 @@ func _input(event):
 		var a = event.pos.x
 		if (touchs_vec.size() == 1):
 			handle_pos (event.pos.x)
-
-func _on_BreakAnimationPlayer_animation_started( name ):
-	print("RIM@: ",name)

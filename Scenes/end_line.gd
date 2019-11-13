@@ -1,16 +1,7 @@
 extends "res://abstract_platform.gd"
-onready var notifier = preload("res://Scenes/Break.tscn")
 
 func _on_Area_body_enter( body ):
-	print(get_node("input_handler"))
-	var aux = notifier.instance()
-	aux.set_pos(OS.get_window_size()/2)
-	print(get_parent().get_parent().get_parent().get_name(), " | ", get_parent().get_parent().get_parent().get_children())
-	print(get_parent().get_parent().get_parent().get_child(7).get_name(), " | GO is GOD")
-	print(get_parent().get_parent().get_parent().get_child(7).get_name(), ": ", get_parent().get_parent().get_parent().get_child(7).get_animation_list())
-	#print(get_tree().quit())
 	get_parent().get_parent().get_parent().get_child(7).play("BreakAnim")
-	#get_parent().get_parent().get_parent().add_child(aux)
 	
 	body.get_parent().end_animation()
 	
