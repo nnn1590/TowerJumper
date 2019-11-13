@@ -34,10 +34,10 @@ func change():
 	
 	if (global[config_name]):
 		aux_pattern = enabled_pattern
-		get_tree().get_root().get_node("global").get_child(0).set_paused(false)
+		get_tree().get_root().get_node("global").get_child(0).set_volume(1)
 	else:
 		aux_pattern = disabled_pattern
-		get_tree().get_root().get_node("global").get_child(0).set_paused(true)
+		get_tree().get_root().get_node("global").get_child(0).set_volume(0)
 	
 	for i in range (0, 8):
 		sprite_list[i].set_modulate(aux_pattern[i])
