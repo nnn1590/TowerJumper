@@ -1,4 +1,4 @@
-[gd_scene load_steps=11 format=1]
+[gd_scene load_steps=12 format=1]
 
 [ext_resource path="res://input_handler.gd" type="Script" id=1]
 [ext_resource path="res://Scenes/Column.tscn" type="PackedScene" id=2]
@@ -8,6 +8,7 @@
 [ext_resource path="res://Scenes/default_button.tscn" type="PackedScene" id=6]
 [ext_resource path="res://Scenes/button_shadow.tres.gd" type="Script" id=7]
 [ext_resource path="res://Scenes/Input_Handler.tres" type="Animation" id=8]
+[ext_resource path="res://Fonts/break_font.fnt" type="BitmapFont" id=9]
 
 [sub_resource type="StyleBoxFlat" id=1]
 
@@ -193,7 +194,9 @@ autoplay = ""
 
 [node name="BreakPosition2D" type="Position2D" parent="."]
 
+visibility/opacity = 0.0
 transform/pos = Vector2( 360, 640 )
+transform/scale = Vector2( 2, 2 )
 
 [node name="BreakLabel" type="Label" parent="BreakPosition2D"]
 
@@ -209,8 +212,35 @@ margin/left = 227.0
 margin/top = 55.0
 margin/right = -208.0
 margin/bottom = -36.0
-custom_fonts/font = ExtResource( 5 )
-custom_colors/font_color = Color( 0.2, 0.709804, 0.898039, 1 )
+custom_fonts/font = ExtResource( 9 )
+text = "BREAK!!!"
+align = 1
+valign = 1
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+
+[node name="BreakPosition2D2" type="Position2D" parent="."]
+
+visibility/opacity = 0.0
+transform/pos = Vector2( 360, 640 )
+transform/scale = Vector2( 5, 5 )
+
+[node name="BreakLabel2" type="Label" parent="BreakPosition2D2"]
+
+anchor/left = 3
+anchor/top = 3
+anchor/right = 3
+anchor/bottom = 3
+focus/ignore_mouse = true
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 0
+margin/left = 227.0
+margin/top = 55.0
+margin/right = -208.0
+margin/bottom = -36.0
+custom_fonts/font = ExtResource( 9 )
 text = "BREAK!!!"
 align = 1
 valign = 1
