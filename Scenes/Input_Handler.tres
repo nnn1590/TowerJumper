@@ -34,7 +34,7 @@ tracks/2/keys = {
 "times": FloatArray( 0, 0.75 ),
 "transitions": FloatArray( -0.659754, -4 ),
 "update": 0,
-"values": [ Vector2( 1, 1 ), Vector2( 5, 5 ) ]
+"values": [ Vector2( 1, 1 ), Vector2( 2, 2 ) ]
 }
 tracks/3/type = "value"
 tracks/3/path = NodePath("BreakPosition2D2:visibility/opacity")
@@ -44,6 +44,6 @@ tracks/3/keys = {
 "times": FloatArray( 0, 0.75 ),
 "transitions": FloatArray( 4, 1 ),
 "update": 0,
-"values": [ 1.0, 0.0 ]
+"values": [ 0.75, 0.0 ]
 }
 

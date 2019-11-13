@@ -224,7 +224,7 @@ max_lines_visible = -1
 
 visibility/opacity = 0.0
 transform/pos = Vector2( 360, 640 )
-transform/scale = Vector2( 5, 5 )
+transform/scale = Vector2( 2, 2 )
 
 [node name="BreakLabel2" type="Label" parent="BreakPosition2D2"]
 
